@@ -2,6 +2,7 @@
 //User interacted with last page(index.html -> clicked on button) which now lifts autplay restrictions and lets audio page bc browsers track user gestures(clicks, taps, keyboards events)-->
 //Only worked for Arc and Google chrome on desktop and not for mobile or safari desktop, will have to change it
 
+alert("On mobile click screen after pressing ok for a suprise!")
 
 //document reps whole webpage then waits for user to registar a click on page then triggers code inside 
 document.addEventListener("click", function() {
