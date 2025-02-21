@@ -1,0 +1,37 @@
+
+
+/* Make background color black */
+/* Make text white and center text */
+html{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+    /*libre bakersville font css code */
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+div{
+    /* Center a div */
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 100px;
+
+}
+
+
+img{
+    width: 100%;
+    border: 5px solid white
+}
+
+
+/* Make uppercase using transformers */
+h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
