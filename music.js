@@ -10,11 +10,16 @@
 
 
 // Detect if the user is on a mobile device more accurately
-const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) && 
-                 !window.navigator.maxTouchPoints == 0;
+//const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) && !window.navigator.maxTouchPoints == 0;
+
+// Detect if the user is on a mobile device
+const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+// Detect if the user is on Safari (desktop or mobile)
+const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 // If user is on mobile, show the alert
-if (isMobile) {
+if (isMobile || isSafari) {
     alert("Click the screen after pressing OK for a surprise! 🎶");
 }
 
