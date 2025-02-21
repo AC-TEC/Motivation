@@ -5,7 +5,7 @@
 // document reps whole webpage then waits for user to registar a click on page then triggers code inside 
 document.addEventListener("click", function() {
     //finds <audio> element in html with id="background-music" and stores in audio variable
-    let audio = document.getElementById("background-music");
+    const audio = document.getElementById("background-music");
 
     //checks if the audio is paused
     if (audio.paused) {
