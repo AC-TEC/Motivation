@@ -2,11 +2,21 @@
 //User interacted with last page(index.html -> clicked on button) which now lifts autplay restrictions and lets audio page bc browsers track user gestures(clicks, taps, keyboards events)-->
 //Only worked for Arc and Google chrome on desktop and not for mobile or safari desktop, will have to change it
 
-if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-    alert("click screen after pressing ok for a suprise! 🎶");
-}
+//if (/Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+    //alert("click screen after pressing ok for a suprise! 🎶");
+//}
 
 //alert("On mobile click screen after pressing ok for a suprise!")
+
+
+// Detect if the user is on a mobile device more accurately
+const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) && 
+                 !window.navigator.maxTouchPoints == 0;
+
+// If user is on mobile, show the alert
+if (isMobile) {
+    alert("Click the screen after pressing OK for a surprise! 🎶");
+}
 
 //document reps whole webpage then waits for user to registar a click on page then triggers code inside 
 document.addEventListener("click", function() {
