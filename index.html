@@ -31,8 +31,8 @@
             height: 50px;
             font-size: 18px;
             font-family: "Libre Baskerville", serif;
-
             color: black;
+            background-color: white;
             
         }
 
@@ -46,9 +46,21 @@
 </head>
 <body>
 
-    <a href="meme.html">
+    <!--
+        UPDATING to button instead
+        <a href="meme.html">
         <button>Enter</button>
     </a>
+    -->
 
+    <button id="enterButton"> Enter </button>
+
+    <!-- Adding music to page -->
+    <audio id="background-music" autoplay loop>
+        <source src="./assets/music/Meme_Music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Link to javascript file which plays the music -->
+    <script src="./music.js"></script>
 </body>
 </html>
